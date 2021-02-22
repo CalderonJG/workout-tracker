@@ -18,6 +18,6 @@ const fitnessSchema = new schema ({
     ]
 });
 
-const fitness = mongoose.model("fitness", fitnessSchema);
+const Fitness = mongoose.model("fitness", fitnessSchema);
 
-module.exports = fitness;
+module.exports = Fitness;

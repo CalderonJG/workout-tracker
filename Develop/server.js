@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const Fitness = require("./models/fitness.js");
 
 const PORT = process.env.PORT || 3000
 
