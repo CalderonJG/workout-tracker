@@ -1,5 +1,5 @@
 # Workout Tracker
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 A workout tracker that utilizes MongoDB and Mongoose to create, edit and track workouts.
