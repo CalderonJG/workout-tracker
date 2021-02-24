@@ -11,13 +11,29 @@ const FitnessSchema = new Schema({
 
     exercises: [
         {
-        name: String,
-        type: String,
-        weight: Number,
-        sets: Number,
-        reps: Number,
-        duration: Number
-        },
+            name: {
+                type: String,
+                trim: true,
+                required: true
+            },
+            type: {
+                type: String,
+                trim: true,
+                required: true
+            },
+            weight: {
+                type: Number
+            },
+            sets: {
+                type: Number
+            },
+            reps: {
+                type: Number
+            },
+            duration: {
+                type: Number
+            },
+        }
     ]
 
 });
