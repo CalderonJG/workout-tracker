@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-const schema = mongoose.schema;
+const Schema = mongoose.Schema;
 
-const fitnessSchema = new schema ({
+const FitnessSchema = new Schema({
 
     day: {
         type: Date,
@@ -11,13 +11,17 @@ const fitnessSchema = new schema ({
 
     exercises: [
         {
-            name: String,
-            time: Number,
-            // double-check required values
-        }
+        name: String,
+        type: String,
+        weight: Number,
+        sets: Number,
+        reps: Number,
+        duration: Number
+        },
     ]
+
 });
 
-const Fitness = mongoose.model("fitness", fitnessSchema);
+const Fitness = mongoose.model("Fitness", FitnessSchema);
 
 module.exports = Fitness;
